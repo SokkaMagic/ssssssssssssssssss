@@ -38,14 +38,9 @@ def integer_sqrt(n):
         mid = (left + right) // 2
 
         if mid * mid <= n:
-            result = mid       # Valid answer, try bigger
+            result = mid
             left = mid + 1
         else:
-            right = mid - 1    # Too big, try smaller
+            right = mid - 1
 
     return result
-
-
-print(integer_sqrt(16))  # 4
-print(integer_sqrt(24))  # 4
-print(integer_sqrt(0))   # 0
