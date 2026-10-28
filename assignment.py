@@ -23,7 +23,7 @@ def find_closest(data, target):
     else:
         return data[left]
 
-# Exercise 2
+
 def integer_sqrt(n):
     left = 0
     right = n
